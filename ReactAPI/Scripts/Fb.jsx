@@ -80,11 +80,35 @@ class EssayForm extends React.Component {
         }
 }
 
+function CustomTextInput(props) {
+    // textInput must be declared here so the ref callback can refer to it
+    let textInput = props.texto;
+
+    function handleClick() {
+        textInput.focus();
+    }
+
+    return (
+      <div>
+        <input
+          type="text"
+               
+        ref={(input) => { textInput = input; }} />
+<input
+type="button"
+value="Focus the text input"
+onClick={handleClick}
+/>
+</div>
+  );  
+}
+
 let modals = (
   <div>
     <AuthorList comments={comments } />,
     <NameForm />,
     <EssayForm />,
+    <CustomTextInput texto="valor inicial"/>,
   </div>
 );
 
