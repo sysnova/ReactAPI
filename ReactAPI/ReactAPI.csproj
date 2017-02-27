@@ -168,6 +168,7 @@
     <Compile Include="App_Start\ReactConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CommentsController.cs" />
+    <Compile Include="Controllers\FiltrableController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReactController.cs" />
     <Compile Include="Global.asax.cs">
@@ -194,6 +195,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Scripts\Invoke.jsx" />
+    <Content Include="Scripts\Filtrable.jsx" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -230,6 +232,7 @@
     <Content Include="Scripts\Tutorial.jsx" />
     <Content Include="Scripts\Fb.jsx" />
     <Content Include="Views\Comments\Index.cshtml" />
+    <Content Include="Views\Filtrable\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
